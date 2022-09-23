@@ -10,7 +10,7 @@ Task matches to all requirements, I used React Vite, Redux, CSS3 with SASS.
 
 First of all, you must copy it to your project:
 
-### `git clone  ./<your_directory>`
+### `git clone https://github.com/Tigran-React-Dev/Tv-application.git ./<your_directory>`
 
 Then install the dependencies:
 
@@ -43,4 +43,4 @@ Delete `dist` folder.
 
 Տիգրան Համբարձումյան
 
-Project Link: []
+Project Link: [https://tigran-react-dev.github.io/Tv-application/]
