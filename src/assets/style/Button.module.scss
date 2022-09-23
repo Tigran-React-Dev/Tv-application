@@ -1,0 +1,34 @@
+@function get-vw($size, $width) {
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+  }
+
+
+  .play{
+    width: get-vw(240px,1920);
+    height: get-vw(72px,1920);
+    background: #F1F1F1;
+    border-radius: get-vw(40px,1920);
+    text-align: center;
+    font-size: get-vw(32px,1920);
+    letter-spacing: -0.32px;
+    color: #0C0C0C;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .moreinfo{
+    width: get-vw(240px,1920);
+    height: get-vw(72px,1920);
+    background: #2727F5;
+    border-radius: get-vw(40px,1920);
+    text-align: center;
+    font-size: get-vw(32px,1920);
+    letter-spacing: -0.32px;
+    color: #F1F1F1;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }

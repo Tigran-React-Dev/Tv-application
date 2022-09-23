@@ -1,0 +1,79 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+  }
+  
+
+  .main{
+    width: get-vw(1920px,1920);
+    height: 100vh;
+    background-image: url("../image/FeaturedCoverImage.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    .lastvideoinfo{
+      width: get-vw(1100px,1920);
+      height: 60vh;
+       margin-left: get-vw(180px,1920 );
+      display: flex;
+      .informationVideo{
+        display: flex;
+        flex-direction: column;
+        width: get-vw(800px,1920);
+        height: get-vw(350px,1920);
+        margin-top: get-vw(200px,1920);
+        .categoryname{
+          letter-spacing: 4.8px;
+          color: #858688;
+          text-transform: uppercase;
+          font-size: get-vw(24px,1920);
+        }
+        img{
+          width: get-vw(683px,1920);
+          height: get-vw(84px, 1920);
+          object-fit: contain;
+          margin-top: get-vw(5px,1920);
+        }
+        .dateandduration{
+            span{
+              font-size: get-vw(32px,1920);
+              letter-spacing: 0px;
+              color: #F1F1F1;
+              padding: get-vw(5px,1920) get-vw(10px,1920);
+              margin-top: get-vw(30px,1920);    
+                    }
+        }
+        .description{
+          font-size: get-vw(32px,1920);
+          letter-spacing: 0px;
+          color: #F1F1F1;
+        }
+        .playormoreinfobutton{
+          width: get-vw(500px,1920);
+          height: get-vw(72px,1920);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: get-vw(26px,1920);
+      
+        }
+      }
+    }
+    .slider{
+      width: get-vw(1580px,1920);
+      height: get-vw(325px,1920);
+      margin-top: get-vw(10px,1920);
+      margin-left: get-vw(340px,1920);
+      position: relative;
+      .trendig{
+        font-size: get-vw(24px,1920);
+        padding-bottom: get-vw(10px,1920);
+        font-style: normal;
+        font-weight: 400;
+        color:  #fff;
+      }
+    }
+  }

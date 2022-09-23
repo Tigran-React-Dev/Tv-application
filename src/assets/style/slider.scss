@@ -1,0 +1,37 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+  }
+  
+.swiper {
+    width: get-vw(1580px,1920);
+    height: get-vw(290px,1920);
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #040404;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.slideritem{
+    width: get-vw(200px,1920);
+    height: get-vw(264px,1920);
+    object-fit: cover;
+    cursor: pointer;
+}
