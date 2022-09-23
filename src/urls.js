@@ -1,4 +1,4 @@
-export const HOME_PAGE = "/";
+export const HOME_PAGE = "/home/Movie";
 export const TV_SHOWS ='/TV Show';
 export const MOVIES ="/Movie";
 export  const GENRES="/genres";
